@@ -15,9 +15,23 @@ function agregarAmigo() {
 
         amigos.push(nombre);
         document.getElementById('amigo').value = '';
+        actualizarLista(amigos);
+
+        return amigos;
 
     }
 
-    console.log(amigos);
+}
 
+//Funcion para mostrar la lista en el index
+function actualizarLista(amigos) {
+    let lista = document.getElementById('listaAmigos');
+
+    lista.innerHTML = '';
+
+    for( i = 0; i < amigos.length; i++){
+
+        lista.innerHTML += `<li>${amigos[i]}</li>`;
+    }
+    
 }
