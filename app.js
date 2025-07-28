@@ -35,3 +35,19 @@ function actualizarLista(amigos) {
     }
     
 }
+
+
+//Funcion para sortear el amigo secreto
+function sortearAmigo() {
+    let resultado = document.getElementById('resultado');
+
+    let indice = Math.floor(Math.random() * amigos.length);
+
+    //Validación si la lista esta vacia
+    if(amigos != ''){
+        
+        resultado.innerHTML = `<li>${amigos[indice]}</li>`;
+
+    }
+    
+}
