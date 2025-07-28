@@ -1,3 +1,6 @@
+let lista = document.getElementById('listaAmigos');
+
+
 //Lista de amigos
 let amigos = [];
 
@@ -25,8 +28,7 @@ function agregarAmigo() {
 
 //Funcion para mostrar la lista en el index
 function actualizarLista(amigos) {
-    let lista = document.getElementById('listaAmigos');
-
+  
     lista.innerHTML = '';
 
     for( i = 0; i < amigos.length; i++){
@@ -42,6 +44,8 @@ function sortearAmigo() {
     let resultado = document.getElementById('resultado');
 
     let indice = Math.floor(Math.random() * amigos.length);
+
+    lista.innerHTML = '';
 
     //Validación si la lista esta vacia
     if(amigos != ''){
