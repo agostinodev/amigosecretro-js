@@ -46,7 +46,7 @@ function sortearAmigo() {
     //Validación si la lista esta vacia
     if(amigos != ''){
         
-        resultado.innerHTML = `<li>${amigos[indice]}</li>`;
+        resultado.innerHTML = `<li>El amigo secreto sorteado es: ${amigos[indice]}</li>`;
 
     }
     
